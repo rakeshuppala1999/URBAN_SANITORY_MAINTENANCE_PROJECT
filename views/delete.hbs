@@ -1,0 +1,198 @@
+<html>
+<head>
+<title> complaint update</title>
+
+<style type="text/css">
+	*{
+	margin:0;
+	padding:0;
+	}
+	body
+	{
+	background: linear-gradient(rgba(0,0,0,0.5),#009688), url(../images/home_image1.png);
+	background-position:center;
+	background-size:cover;
+    margin-top:40px;
+	}
+	
+	.comform{
+	width:800px;
+    background-position:center;
+	background-color: rgb(0,0,0,0.6);
+    color: #ffffff;
+    padding:10px 0px 10px 0px;
+    text-align:center;
+    border-radius:15px 15px 0px 0px;
+	}
+	
+	.main{
+	background-color:rgb(0,0,0,0.5);
+	width:800px;
+	margin:auto;
+	height:1000px;
+	opacity:0.8;
+	}
+	form{
+	padding:10px;
+	}
+	
+	#uid{
+	width:100%;
+	height:100px;
+	}
+	
+	.uid{
+	margin-left: 25px;
+	margin-top: 30px;
+	width: 125px;
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+	}
+	
+	.eid{
+	position: relative;
+	left: 200px;
+	top:-25px;
+	line-height:40px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	width:370px;
+    }
+	
+	
+	#eid{
+	position: relative;
+	left: 200px;
+	top:-25px;
+	line-height:40px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	width:250px;
+    }
+	
+	
+	
+	#cd{
+	position: relative;
+	left: 200px;
+	top:-25px;
+	line-height:40px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	width:450px;
+    }
+	
+	.code{
+	position: relative;
+	left: 200px;
+	top: -25px;
+	line-height: 40px;
+	width:25px;
+	border-radius: 6px;
+	padding: 0 22px;
+	font-size: 16px;
+	}
+	
+	.number{
+	position: relative;
+	left: 200px;
+	top: -25px;
+	line-height: 40px;
+	width:240px;
+	border-radius: 6px;
+	padding: 0 22px;
+	font-size: 16px;
+	}
+	
+	.option{
+	position:relative;
+	left:200px;
+	top: -25px;
+	line-height: 40px;
+	width:302px;
+	height: 40px;
+	border-radius: 6px;
+	padding:0 22px;
+	font-size:16px;
+	outline:none;
+	overflow: hidden;
+	}
+	
+	#btn{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 50;
+	border-color:#fff;
+	background-color:#fff;
+	outline: none;
+	position: relative;
+	
+}
+
+  #btn:hover{
+    width: 25%;
+
+	
+	}
+	
+	.logo{
+		width:140px;
+		position: absolute;
+		top: 2%;
+		left: 3%;
+	
+}
+
+span{
+	color: #fff;
+	font-size: 45px;
+	top: 40px;
+	left: 222px;
+	position: absolute;
+	
+}
+	
+	</style>
+	
+	
+</head>
+<body>
+
+<section id="home">
+	<img src="../images/usm_image1.JPG" class="logo">
+	<span> Urban Sanitary Maintainance</span>
+<br><br>
+	{{#if message }} 
+  
+	<h1 style="color:rgb(192, 238, 102)"  class="alert alert-danger mt-4">{{message}}</h1> 
+  {{/if}} 
+
+	<div style="text-align:right;"  class="back"><h3><a href="services" style="color:rgb(192, 238, 102)" > <br><i> <pre>🔙 Back To Services...   </pre></i></a></h3></div>
+	
+	<br><br><br><br>
+ 
+
+
+<center> <div class="comform"><h1>DELETE COMPLAINT? </h1></div></center>
+	<div class="main">
+	
+	   <form method="post" action="//localhost:8522/form" >
+	   <div id="uid">
+	     <h2 class="uid">COMPLAINT ID</H2>
+		 <input class="eid" type="text" name="c_id"><br>
+         <center><button id="btn" type="button" onclick="del()"name="submit">Submit Complaint </center>
+         </div>
+         </form></div>
+         <script>
+             function del()
+                 {    var a=document.getElementById("c_id");
+                     confirm('Do You Really Want To DELETE Complaint?' +a);
+                 }
+             )
+         </script>
+         </body></html>

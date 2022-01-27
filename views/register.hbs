@@ -1,0 +1,288 @@
+<html>
+<head>
+<title> Sign up/ Login </title>
+<!--<link rel="stylesheet" href="css/login.css">-->
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style lang="text/css">
+
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+.hero{
+	height: 100%;
+	width: 100%;
+	
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+} 
+
+
+.home{
+	background: linear-gradient(rgba(0,0,0,0.5),#009688), url(../images/home_image1.PNG);
+	background-size: cover;
+	background-position: center;
+	height: 150vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	opacity: 1;
+	
+	
+}
+.logo{
+		width:140px;
+		position: absolute;
+		top: 2%;
+		left: 3%;
+	
+}
+
+
+.form-box{
+
+	width: 380px;
+	height: 480px;
+	position: center;
+	margin: 6% auto;
+	background-color: rgb(243, 239, 232);
+	padding: 5px;
+	opacity:0.75;
+	overflow: hidden;
+}
+.button-box{
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	/*box-shadow: 0 0 20px 9px #009688;*/
+	border-radius: 30px;
+}
+.toggle-btn{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+#btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	/*box-shadow: 0 0 20px 9px #009688;
+	background: linear-gradient(rgba(0,0,0,0.5),#009688);*/
+	border-radius: 30px;
+	transition: .5s;
+}
+
+#reg1{
+	opacity: 5;
+	background-color: #2b6b91;
+}
+
+.input-group{
+	top: 240px;
+	position: absolute;
+	width: 280;
+	transition: .5s;
+}
+
+.input-group1{
+	top: 188px;
+	position: absolute;
+	width: 280;
+	transition: .5s;
+}
+
+.input-field{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+
+
+.submit-btn{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: linear-gradient(rgba(0,0,0,0.5),#2b6b91);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.check-box{
+	margin: 30px 10px 30px 0;
+}
+#login3{
+	color: #777;
+	font-size: 12px;
+	bottom: 68px;
+	position: absolute;
+}
+#login2{
+	color: #777;
+	font-size: 12px;
+	bottom: 68px;
+	position: absolute;
+}
+#login1
+{
+    color: #fff;
+	font-size: 45px;
+	top: 40px;
+	left: 222px;
+	position: absolute;	
+}
+#login{
+	left: 665px;
+}
+#register{
+	left: 665px;
+}
+
+@media screen and (max-width: 770px)
+{
+	.form-box
+	{
+		display: block;
+	}
+	#btn
+	{
+}
+
+.fa{
+	margin-right: 10px;
+}
+.eye{
+	position: absolute;
+}
+#hide{
+	display: none;
+}
+
+.back
+{ 
+ 
+ 
+ top: 100px;
+left: 222px;
+    	
+}
+
+
+
+
+.banner-btn
+{
+	margin: 70px auto 0;
+}
+
+
+
+</style>
+</head>
+<body>
+	
+<section class="home">
+	
+  <img src="..\images\usm_image1.JPG" class="logo">
+  <span id="login1"> Urban Sanitary Maintainance</span> <br><br><br>
+  <div style="text-align:right;"  class="back"><h3><a href="/" style="color:rgb(192, 238, 102)" > <br><pre>🔙 Back To Home... </pre></a></h3></div>
+ 
+  
+  <center>
+  {{#if message }}
+  
+	<h2 style="color: rgb(192, 238, 102);" class="alert alert-danger mt-4">{{message}}</h2>
+  {{/if}}
+  </center>
+ 
+
+
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn"><a href="/login"> Log In</a> </button>
+				<button type="button" class="toggle-btn" id="reg1"><b style="color: white;"><u>Register</u> </b></button>
+			</div>	
+			<form id="register" class="input-group1" action="/auth/register" method="POST" name="reg">
+			    <input type="text" class="input-field" placeholder="Name" name="name" required>
+				<input type="text" class="input-field" placeholder="Mobile No." name="mobile" pattern="[0-9]{10}" title="Mobile Number Must Be 10 Digits (NUMERICS only)"required>
+				<input type="email" class="input-field" placeholder="Email Id" name="email" required>
+				
+				<input type="password" class="input-field" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" name="password" required>
+				<input type="checkbox" class="check-box" required><span id="login3"> I agree to the terms & conditons</span>
+				<button type="submit" class="submit-btn"><u><b style="color: white;">Register</b></u></button>
+			</form>
+
+	
+
+
+
+			</div>
+       
+   
+
+
+	
+
+
+	</div>
+
+    
+
+
+	<script>
+	/*var x =document.getElementById("login");*/
+	var y =document.getElementById("register");
+	var z =document.getElementById("btn");
+	
+	/*function register()
+	{
+		x.style.left ="-400px";
+		y.style.left ="665px";
+		z.style.left ="110px";
+	}
+	function login()
+	{
+		x.style.left ="665px";
+		y.style.left ="2000px";
+		z.style.left ="0px";
+	}
+
+	function phonenumber(inputtxt)
+    {
+  		var phoneno = /^\d{10}$/;
+  		if((inputtxt.value.match(phoneno))
+        {
+      			return true;
+        }
+      	else
+        {
+        		alert("message");
+        		return false;
+        }
+	}*/
+	
+	</script>
+
+
+
+
+
+</section>
+</body>
+</html>

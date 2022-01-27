@@ -1,0 +1,409 @@
+<html>
+<head>
+	<title> Urban Sanitary Maintainance </title>
+	<link rel="stylesheet" href="/css/home.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+ 
+	
+	
+	<style type="text/css">
+
+*{
+	margin: 0;
+	padding: 0
+}
+
+#home{
+	background: linear-gradient(rgba(0,0,0,0.5),#009688), url(home_image1.PNG);
+	background-size: cover;
+	background-position: center;
+	height: 150vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	opacity: 1;
+	
+	
+}
+.logo{
+		width:140px;
+		position: absolute;
+		top: 2%;
+		left: 3%;
+	
+}
+.banner-text{
+	text-align: center;
+	color: #fff;
+	padding-top: 180;
+}
+h1
+{
+	font-family: sans-serif;
+    font-size: 100px;
+	
+}
+p
+{
+	font-size: 30px;
+}
+
+.menu-bar
+{
+	background: linear-gradient(rgba(0,0,0,0.5),#009688);
+	text-align:center;
+}
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style:none;
+	color:#fff;
+}
+.menu-bar ul li
+{
+	width: 200px;
+	margin: 15px;
+	padding: 5px;
+}
+
+.menu-bar ul li a
+{
+	text-decoration:none;
+	color: #fff;
+}
+.menu-bar ul li:hover
+{
+	background: hsl(147,50%,47%);
+	border-radius: 3px;
+}
+.menu-bar .fa
+{
+	margin-right: 8px;
+}
+.sub-menu-1
+{
+	display: none;
+}    
+.menu-bar ul li:hover .sub-menu-1
+{
+	display: block;
+	position: absolute;
+	background:rgb(100,100,100);
+	margin-top: 15px;
+	margin-left:-15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display: block;
+	margin: 4px;
+}
+.ul_1
+{
+	font-size: 30px;
+}
+.banner-btn
+{
+	margin: 70px auto 0;
+}
+.banner-btn a{
+	width: 250px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 12px 0;
+	color: #fff;
+	border: .5px solid #fff;
+	font-family: sans-serif;
+	font-size: 25px;
+	position: relative;
+	z-index: 1;
+	transition: color 0.5s;
+}
+.banner-btn a span{
+	width: 0%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: -1;
+	transition: 0.5s;
+}
+.banner-btn a:hover span{
+	width: 100%;
+}
+.banner-btn a:hover {
+	color: #000;
+}
+@media screen and (max-width: 770px)
+{
+	h1
+    {
+	font-family: sans-serif;
+    font-size: 44px;
+	
+    }
+	.banner-btn a
+	{
+		display: block;
+		
+	}
+	.menu-bar ul
+	{
+		display: block;
+	}
+	
+}
+#s2
+{
+	background: linear-gradient(rgba(0,0,0,0.5),#009688);
+	background-size: cover;
+	background-position: center;
+	height: 150vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	opacity: 1;
+	flex-basis: 50%;
+}
+.service-box
+{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+
+	justify-content: space-around;
+}
+.single-service {
+	flex-basis: 48%;
+	text-align: center;
+	border-radius: 7px;
+	margin-bottom: 20px;
+	color: #fff;
+	position: relative;
+}
+.single-service img{
+	width: 100%;
+	border-radius: 7px;
+}
+.overlay
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	border-radius: 7px;
+	cursor: pointer;
+	background: linear-gradient(rgba(0,0,0,0.5),#009688);
+	opacity: 0;
+	transition: 1s;
+}
+.single-service:hover .overlay
+{
+	opacity: 0.7;
+}
+h2
+{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+
+	justify-content: space-around;
+}
+.service-desc{
+	width: 80%;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	opacity: 0;
+    transition: 1s;
+	transform: translateX(-50%);
+}
+hr
+{
+	background: #fff;
+	height: 2px;
+	border: 0;
+	margin: 15px auto;
+	width: 60%;
+}
+.service-desc p{
+font-size: 20px;
+}
+.single-service:hover .service-desc
+{
+	bottom: 40%;
+	opacity: 1;
+}
+#s3
+{
+    
+	font-size: 40px;
+	align-items: center;
+	text-align: center;
+	background: linear-gradient(rgba(0,0,0,0.4),#009688);
+	background-size: cover;
+	background-position: center;
+	height: 150vh;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	opacity: 1;
+	flex-basis: 50%;
+	
+}
+.title-text{
+width: 90%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+
+	justify-content: space-around;
+	}
+	
+	
+	
+.back
+{ 
+ color: #fff;
+ 
+    	
+}
+	
+	
+
+
+</style>
+
+
+
+
+
+
+</head>
+<body>
+
+<section id="home">
+	<img src="usm_image1.JPG" class="logo" id="home1">
+	<div class="banner-text">
+	   <h1>Urban Sanitary Maintainance</h1><br>
+	   <p>...An Initiative to Urban Cleaning...</p><br>
+	 </div>
+	 
+	 
+	     <div class="menu-bar">
+	<ul class="ul_1">
+	<li><a href="#"><i class="fa fa-home" ></i> Home </a></li>
+	<li><a href="#about"><i class="fa fa-users" ></i>About us</a>
+	   <!--   <div class="sub-menu-1">
+		      <ul>
+			      <li><a href="#">Mission</a></li>
+				  <li><a href="#">Vision</a></li>
+				  <li><a href="#">Team</a></li>
+			  </ul>
+		  </div>	  
+	</li> -->	
+	
+	<!--  <li><a href="#"><i class="fa fa-clone" ></i>  Services </a>
+	<div class="sub-menu-1">
+		      <ul>
+			      <li><a href="#">Register a Complaint</a></li>
+				  <li><a href="#">Track Your Complaint</a></li>
+				  <li><a href="#">Update Complaint</a></li>
+			  </ul>
+		  </div>
+	</li>  -->
+	
+	<!--<li><a href="#"><i class="fa fa-phone" ></i>  Login </a>-->
+	
+	
+	
+	
+	
+	<li><a href="#FAQ"><i class="fa fa-phone" ></i>  FAQ's</a>
+	
+	 <!--    <div class="sub-menu-1">
+		      <ul>
+			      <li><a href="#">301</a></li>
+				  <li><a href="#">302</a></li>
+				  <li><a href="#">37</a></li>
+			  </ul>
+		  </div>  -->
+	</li>
+	
+	</ul>
+	</div> 
+	<center>
+	<div class="banner-btn">
+		<a href="C:\Users\Rakesh\Desktop\MPJ\CODE\login.html"><span> </span>Login/Register</a>
+	</div>	
+	</center>
+	
+
+</section>
+<section id="s2">
+ 
+<p id="about" align="center"><font size="100px" color="#fff"><B><u>About Us</u></B></font></p><br><br><br>
+<div class="title-text">
+<h2> Urban Sanitary Maintainance System is Online Complaint platform to raise the complaints regarding sanitary issues accross the city.</h2><br><br><br>
+</div>
+  <div class="service-box">
+	<div class="single-service">
+		<img src="C:\Users\Rakesh\Desktop\MPJ\CODE\home_image3.jpg">
+		<div class="overlay"></div>
+		<div class="service-desc">
+		   <p>Keep Toilet Clean</p>
+		   <hr>
+		   <p> this dkfjaskfjasfioajfka kdjfasfjoiajf jkasjfaw'fkf j rakaerhja  askrjaksfdifajs djfafiadfa jidfjiad fja  iajijdi kdjfoiajfiim f</p>
+		 </div>
+	</div>
+	<div class="single-service">
+		<img src="C:\Users\Rakesh\Desktop\MPJ\CODE\home_image2.jpg">
+		<div class="overlay"></div>
+		<div class="service-desc">
+		   <p>Keep Toilet Clean</p>
+		   <hr>
+		   <p> this dkfjaskfjasfioajfka kdjfasfjoiajf jkasjfaw'fkf j rakaerhja  askrjaksfdifajs djfafiadfa jidfjiad fja  iajijdi kdjfoiajfiim f</p>
+		 </div>
+    </div>
+</div>
+
+<h3><a href="#home1" class="back"> <-Back To Home </a></h3>
+
+</section>
+
+<section id="s3">
+ 
+<p id="FAQ" align="center"><font size="100px" color="#fff"><B><u>FAQ's</u></B></font></p><br>
+
+
+
+<div class="title-text">
+ 
+<ul>
+ <li>Q1. How to Register a Complaint ?<br> </li>
+ <li> <a href="https://youtu.be/mwLS3z3RZGg"> video for complaint</a> </li>
+ 
+  <li>Q2. How to Track a Complaint ?<br> </li>
+ <li> <a href="https://youtu.be/mwLS3z3RZGg"> video for complaint</a> </li>
+ 
+  <li>Q3. How to Delete a Complaint ?<br> </li>
+ <li> <a href="https://youtu.be/mwLS3z3RZGg"> video for complaint</a> </li>
+ 
+  <li>Q4. How to Update a Complaint ?<br> </li>
+ <li> <a href="https://youtu.be/mwLS3z3RZGg"> video for complaint</a> </li>
+</ul
+
+
+</div>
+<h3><a href="#home1" class="back"> <-Back To Home </a></h3>
+
+<section>
+
+</body>
+</html>

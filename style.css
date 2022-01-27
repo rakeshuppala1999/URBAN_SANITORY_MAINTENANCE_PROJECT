@@ -1,0 +1,74 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+} 
+body
+{
+	background-image: url(usm_image.png);
+	background-size: 35%;
+	background-position: center;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.div1 
+{
+	font-size : 50px;
+	background-image: linear-gradient(to bottom right,lightblue,lightyellow,lightpink,skyblue);
+	#background-image: linear-gradient(to right, red , yellow);
+    #background-image: linear-gradient(red, yellow, green);
+}
+.menu-bar
+{
+	background :rgb(100,100,100);
+	text-align:center;
+}
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style:none;
+	color:#fff;
+}
+.menu-bar ul li
+{
+	width: 200px;
+	margin: 15px;
+	padding: 5px;
+}
+
+.menu-bar ul li a
+{
+	text-decoration:none;
+	color: #fff;
+}
+.active, .menu-bar ul li:hover
+{
+	background: #2bab0d;
+	border-radius: 3px;
+}
+.menu-bar .fa
+{
+	margin-right: 8px;
+}
+.sub-menu-1
+{
+	display: none;
+}    
+.menu-bar ul li:hover .sub-menu-1
+{
+	display: block;
+	position: absolute;
+	background:rgb(100,100,100);
+	margin-top: 15px;
+	margin-left:-15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display: block;
+	margin: 4px;
+}
+.ul_1
+{
+	font-size: 30px;
+}

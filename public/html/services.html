@@ -1,0 +1,93 @@
+<html>
+<head>
+<title> Services </title>
+<link rel="stylesheet" href="services.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+
+</head>
+<body>
+<section id="home">
+	<img src="usm_image1.JPG" class="logo">
+	<span> Urban Sanitary Maintainance</span>
+	
+	<br><br><br><br><br><br><br><br><br>
+	<!--<h1><marquee> Latest Updates</marquee></h1>-->
+	
+	
+	
+	
+	
+	<h1><marquee>latest updaasdf </marquee></h1>
+
+	
+	
+	
+
+	
+	<section id="services1"><h3><i>Services: </i> </h3> </section><br><br>
+	
+
+	<div class="menu-bar">
+	   <ul class="ul_1">
+	<li><a href="#"><i class="fa fa-users" ></i><i>Complaints</i></a>
+	          <div class="sub-menu-1">
+		      <ul>
+			      <li><a href="C:\Users\Rakesh\Desktop\MPJ\CODE\form.html" >Register Complaint</button></li>
+				  <li><a href ="#" onclick="update()">Update Complaint</a></li>
+				  <li><a href="#" onclick="del()">Delete complaint</a></li>
+			  </ul>
+		      </div>
+	<li><a href="#"><i class="fa fa-phone" ></i><i> Track Complaint</i></a>
+	<li><a href="#"><i class="fa fa-phone" ></i><i> Complaint History</i></a>
+	<li><a href="C:\Users\Rakesh\Desktop\MPJ\CODE\home.html"><i class="fa fa-phone" ></i><i>Logout</i></a>
+	</li>
+	
+	</ul>
+	 </div>
+
+
+
+</div>
+	 
+	
+</section>
+
+<script lang="javascript">
+function update()
+{
+   
+   var a=prompt("Please Enter Your Complaint ID ",205);
+
+	if(a!=null)
+	{
+	document.getElementbyId("b1").style.display="inline";
+	return a=0;
+	}
+	else
+	{
+	document.getElementbyId("b1").style.display="none";
+	return a=1;
+	}
+}
+
+function del()
+{
+   
+   var b=prompt("Please Enter Your Complaint ID ");
+   confirm('Do You Really Want To DELETE Complaint ${b}');
+
+	
+}
+
+
+
+</script>
+
+
+   
+
+</body>
+
+</html>

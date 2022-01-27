@@ -1,0 +1,244 @@
+<!DOCTYPE html>  
+ <html>  
+ <head>  
+  <title>Form in HTML</title>  
+  
+	<style type="text/css">
+	*{
+	margin:0;
+	padding:0;
+	}
+	body
+	{
+	background: linear-gradient(rgba(0,0,0,0.5),#009688), url(../images/home_image1.png);
+	background-position:center;
+	background-size:cover;
+    margin-top:40px;
+	}
+	
+	.comform{
+	width:800px;
+    background-position:center;
+	background-color: rgb(0,0,0,0.6);
+    color: #ffffff;
+    padding:10px 0px 10px 0px;
+    text-align:center;
+    border-radius:15px 15px 0px 0px;
+	}
+	
+	.main{
+	background-color:rgb(0,0,0,0.5);
+	width:800px;
+	margin:auto;
+	height:1000px;
+	opacity:0.8;
+	}
+	form{
+	padding:10px;
+	}
+	
+	#uid{
+	width:100%;
+	height:100px;
+	}
+	
+	.uid{
+	margin-left: 25px;
+	margin-top: 30px;
+	width: 125px;
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+	}
+	
+	.eid{
+	position: relative;
+	left: 200px;
+	top:-25px;
+	line-height:40px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	width:370px;
+    }
+	
+	
+	#eid{
+	position: relative;
+	left: 200px;
+	top:-25px;
+	line-height:40px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	width:250px;
+    }
+	
+	
+	
+	#cd{
+	position: relative;
+	left: 200px;
+	top:-25px;
+	line-height:40px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	width:450px;
+    }
+	
+	.code{
+	position: relative;
+	left: 200px;
+	top: -25px;
+	line-height: 40px;
+	width:25px;
+	border-radius: 6px;
+	padding: 0 22px;
+	font-size: 16px;
+	}
+	
+	.number{
+	position: relative;
+	left: 200px;
+	top: -25px;
+	line-height: 40px;
+	width:240px;
+	border-radius: 6px;
+	padding: 0 22px;
+	font-size: 16px;
+	}
+	
+	.option{
+	position:relative;
+	left:200px;
+	top: -25px;
+	line-height: 40px;
+	width:302px;
+	height: 40px;
+	border-radius: 6px;
+	padding:0 22px;
+	font-size:16px;
+	outline:none;
+	overflow: hidden;
+	}
+	
+	#btn{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 50;
+	border-color:#fff;
+	background-color:#fff;
+	outline: none;
+	position: relative;
+	
+}
+
+  #btn:hover{
+    width: 25%;
+
+	
+	}
+	
+	.logo{
+		width:140px;
+		position: absolute;
+		top: 2%;
+		left: 3%;
+	
+}
+
+span{
+	color: #fff;
+	font-size: 45px;
+	top: 40px;
+	left: 222px;
+	position: absolute;
+	
+}
+	
+	</style>
+	
+</head>  
+ <body>
+ <section id="home">
+	<img src="../images/usm_image1.JPG" class="logo">
+	<span> Urban Sanitary Maintainance</span>
+<br><br>
+	{{#if message }} 
+  
+	<h1 style="color:rgb(192, 238, 102)"  class="alert alert-danger mt-4">{{message}}</h1> 
+  {{/if}} 
+
+	<div style="text-align:right;"  class="back"><h3><a href="services" style="color:rgb(192, 238, 102)" > <br><i> <pre>🔙 Back To Services...   </pre></i></a></h3></div>
+	
+	<br><br><br><br>
+ 
+   <center> <div class="comform"><h1>Complaint Form </h1></div></center>
+	<div class="main">
+	
+	   <form method="POST" action="//localhost:8522/form">
+	   <div id="uid">
+	     
+		 
+		 <h2 class="uid">EMAIL ID</H2>
+		 <input class="eid" type="email" name="email_id" required><br>
+		 <h2 class="uid">PHONE</H2>
+		 <input class="code" type="text" name="area_code" placeholder="+91">
+		 
+		 <input class="number" type="text" name="phone" required>
+		 
+		 <h2 class="uid"> Toilet ID</h2>
+		 <select class="option" name="t_id" required>
+		 <option disabled="disabled" selected="selected" >--CHOOSE Toilet ID--</option>
+		 <option> M001 </option>
+         <option> M002 </option>
+		 <option> M003 </option>
+		 <option> M004 </option>
+		 <option> M005 </option>
+		 <option> M006 </option>
+		 
+		 </select>
+		 
+		  <h2 class="uid"> Complaint Type</h2>
+		 <select class="option" name="c_id" required>
+		 <option disabled="disabled" selected="selected" >--CHOOSE Complaint Type--</option>
+		 <option> Water Logging </option>
+         <option> Damaged Amenities </option>
+		 <option> Bad Smell </option>
+		 <option> Others... </option>
+		 
+		 </select>
+		 
+		 <h2 class="uid"> Upload Image/Video </h2> 
+		   <input id="eid" type="file" name="img" required>
+		  
+		 <h2 class="uid"> Complaint Description </h2>
+		    <textarea id="cd" name="cd" rows="5" cols="50">  </textarea>
+			<br><br>
+			
+			
+			<center><button id="btn" name="submit" > Submit Complaint</button> </center>
+		 
+        </div>
+        </form>
+		
+	<div> 
+		<p id="geeks"> </p>
+		 
+  </section> 
+
+  <script>
+        var down = document.getElementById('geeks'); 
+      function random()
+	  {
+		  	var minm = 10000; 
+            var maxm = 99999; 
+            down.innerHTML = Math.floor(Math 
+            .random() * (maxm - minm + 1)) + minm; 
+	  }
+  </script>
+
+ </body>  
+</html> 
